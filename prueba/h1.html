@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>Calculador De Notas</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <div class="div_img">
+            <a class="navbar-brand" href="#"><img src="./images/logo_cft_estatal.jpeg" class="logo" alt=""></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Estudiantes</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Actividades
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" aria-enabled="true">Material</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#" aria-enabled="true">Ingreso de Notas</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 my-5 bg-white">
+                <h1>Tecnologia Web</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="input-group-text">Nombre del Estudiante</label>
+                        <input type="text" class="form-control" placeholder="nombre completo" id="nombre">
+                    </div>
+                <!--tipo de asignatura-->
+                    <div class="mb-3">
+                        <label for="asignatura" class="input-group-text">Asignatura</label>
+                        <input type="text" class="form-control" placeholder="tipo de asignatura" id="asignatura">
+                    </div>
+                    <h1>Calculos de Notas</h1>
+                    <!--unidad 1 nota 1-2-->
+                    <div class=" mb-3">
+                        <label for="unidad1" class="input-group-text">Unidad 1 total 33%: Características de un sitio Web</label>
+                        <input type="number" class="form-control" placeholder="12%" id="unidad1">
+                        <input type="number" class="form-control" placeholder="21%" id="unidad1">
+                    </div>
+                <!--unidad 2 nota 3-4-->
+                    <div class="mb-3">
+                        <label for="unidad2" class="input-group-text">Unidad 2: 33%: Programación básica de un aplicación Web</label>
+                        <input type="number" class="form-control" placeholder="12%" id="unidad2">
+                        <input type="number" class="form-control" placeholder="21%" id="unidad2">
+                    </div>
+                <!--unidad 3 nota 5-6-->
+                    <div class="mb-3">
+                        <label for="unidad3" class="input-group-text">Unidad 3: 34%: Programación Avanzada de una aplicación Web</label>
+                        <input type="number" class="form-control" placeholder="13%" id="unidad3">
+                        <input type="number" class="form-control" placeholder="21%" id="unidad3">
+                    </div>
+                    <div class="col-12">
+                        <button  onclick= "Enviar()" class="btn btn-success form-control" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 my-5 bg-white">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Unidad</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                        </tr>
+                    </thead>    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>12%</td>
+                            <td>21%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>12%</td>
+                            <td>21%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>13%</td>
+                            <td>21%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/scrips.js"></script>
+</body>
+</html>
